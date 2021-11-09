@@ -1,0 +1,29 @@
+.actions {
+    display: flex;
+    justify-content:space-between;
+
+    button {
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7rem;
+        border: 0;
+        background: var(--blue-light);
+        padding: 0 2rem;
+        height: 3rem;
+        border-radius: 0.25rem;
+        transition: filter 0.2s;
+        color: #FFF;
+        font-weight: 500;
+
+        &:hover {
+            filter: brightness(0.9)
+        }
+
+        &.login {
+            background: var(--green)
+        }
+    }
+}

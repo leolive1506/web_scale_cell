@@ -1,0 +1,61 @@
+.tableList {
+    width: 100%;
+    max-width: 100%;
+    border-spacing: 0 0.5;
+    
+    th {
+        padding: 2rem 2rem;
+        color: var(--text-body);
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: 400;
+
+        &:first-child, &.titleActions {
+            text-align: center;
+        }
+    }
+
+    td {
+        padding: 1rem 2rem;
+        border: 0;
+        background: var(--shape);
+        border-radius: 0.25rem;
+        text-align: left;
+
+        &:first-child {
+            text-align: center;
+        }
+
+        &.actions{
+            display: flex;
+            gap: 1.3rem;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 2rem 2rem;
+            cursor: pointer;
+
+            svg {
+
+                transition: .2s;
+                &:first-child {
+                    fill: var(--green)
+                }
+
+                &:nth-child(2) {
+                    fill: var(--blue-light)
+                }
+
+                &:last-child {
+                    fill: var(--red)
+                }
+
+                &:hover {
+                    margin-top: -0.7rem
+                }
+
+            }
+
+        }
+    }
+}

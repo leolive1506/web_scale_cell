@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: uppercase;
+    
+    .content {
+        background: var(--blue);
+        border-radius: 0.50rem;
+        color: #FFF;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            padding: 2rem;
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            max-width: 20rem;
+
+            .inputGroup {
+                display: flex;
+                flex-direction: column;
+                
+                input {
+                    padding: 0.25rem;
+                    border-radius: 0.25rem;
+                    border: 0;
+                    height: 2rem;
+                    
+                    &:focus {
+                        outline: 2px solid #000;
+                        border: 3px solid var(--shape);
+                        
+                    }
+                }
+            }
+        }
+    }
+}
