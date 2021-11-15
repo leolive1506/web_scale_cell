@@ -7,7 +7,7 @@ import { Login } from "./components/Login"
 import { NewScaleForm } from "./components/NewScaleForm"
 import "./global.scss"
 function App() {
-  const [isOpenNewScaleModal, setIsOpenNewScaleModal] = useState(true)
+  const [isOpenNewScaleModal, setIsOpenNewScaleModal] = useState(false)
 
   function handleOpenNewScaleModal() {
     setIsOpenNewScaleModal(true)

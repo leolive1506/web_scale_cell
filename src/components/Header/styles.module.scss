@@ -1,6 +1,7 @@
 .header {
     background: var(--blue);
     text-transform: uppercase;
+    padding: 10px;
     
     .container {
         margin: 0 auto;
@@ -8,7 +9,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 3rem;
+        padding: 2rem 0;
 
         h1 {
             font-size: 2rem;
@@ -30,5 +31,16 @@
                 filter: brightness(0.9)
             }
         }
+
+        @media (max-width: 700px) {
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            button {
+                width: 100%
+            }
+        }
     }
+
 }

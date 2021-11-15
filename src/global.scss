@@ -47,3 +47,25 @@ button {
     opacity: 0.6;
     cursor: not-allowed
 }
+
+.react-modal-overlay {
+    position: fixed;
+
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.react-modal-content {
+    padding: 1.5rem 3rem;
+    background: var(--shape);
+    border-radius: 0.25rem;
+}
